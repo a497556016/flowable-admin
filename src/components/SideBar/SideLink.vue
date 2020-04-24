@@ -45,7 +45,10 @@
     }
     .router-link-active {
         color: #f7f61e !important;
-        background-color: #4c5758 !important;
+        background-color: rgba(255,255,255,.1) !important;
 
+    }
+    .v-list-item {
+        margin-bottom: 8px !important;
     }
 </style>

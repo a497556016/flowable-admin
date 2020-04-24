@@ -7,13 +7,14 @@
                 <v-data-table
                         :headers="headers"
                         :items="data"
-                        :items-per-page="5"
+                        :items-per-page="10"
                         :loading="loading"
                         :options.sync="options"
                         :server-items-length="total"
                 >
                     <template v-slot:item.actions="{ item }">
                         <v-btn color="primary" small @click="showDiagram(item.id)">查看流程图</v-btn>
+                        <v-btn color="purple" dark small @click="startProcess(item)">发起流程</v-btn>
                     </template>
                 </v-data-table>
             </v-card-text>
@@ -78,6 +79,16 @@
             showDiagram(processDefinitionId){
                 this.processDiagramSrc = `http://localhost:7008?processDefinitionId=${processDefinitionId}`;
                 this.processDiagramView = true;
+            },
+            startProcess(item){
+                this.$router.push({
+                    path: `/form/startProcessWithForm`,
+                    query: {
+                        id: item.id,
+                        key: item.key,
+                        name: item.name
+                    }
+                })
             }
         }
     }

@@ -1,7 +1,5 @@
 import Alert from "./Alert";
 import Confirm from "./Confirm";
-import Vuetify from "vuetify";
-import vuetify from "../../plugins/vuetify";
 
 export default {
     components: {},
@@ -26,6 +24,12 @@ export default {
         Object.defineProperty(Vue.prototype, "$confirm", {
             get() {
                 return me.components.confirm.show
+            }
+        });
+
+        Object.defineProperty(Vue.prototype, "$alert", {
+            get() {
+                return me.components.alert.show
             }
         })
     }

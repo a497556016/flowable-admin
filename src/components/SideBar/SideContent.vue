@@ -68,6 +68,8 @@
 </script>
 
 <style scoped lang="scss">
-
+    .v-list:first-child {
+        padding-top: 8px;
+    }
 
 </style>

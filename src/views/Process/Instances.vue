@@ -10,7 +10,7 @@
                         :items="dataTable.data"
                         :options.sync="dataTable.options"
                         :server-items-length="dataTable.total"
-                        :items-per-page="5"
+                        :items-per-page="10"
                         show-select
                         class="elevation-1"
                 >

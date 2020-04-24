@@ -3,13 +3,15 @@ import * as userAccount from "./userAccount/types";
 import * as todoTask from "./todoTask/types";
 import * as doneTask from "./doneTask/types";
 import * as processInstances from "./processInstaces/types";
+import * as form from "./form/types";
 
 const moduleTypes = {
   application,
   userAccount,
   todoTask,
   doneTask,
-  processInstances
+  processInstances,
+  form
 };
 
 for (let module in moduleTypes) {

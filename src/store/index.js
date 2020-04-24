@@ -8,6 +8,7 @@ import userAccount from "./userAccount";
 import todoTask from "./todoTask";
 import doneTask from "./doneTask";
 import processInstances from "./processInstaces";
+import form from "./form";
 
 export default new Vuex.Store({
   modules: {
@@ -15,6 +16,7 @@ export default new Vuex.Store({
     userAccount,
     todoTask,
     doneTask,
-    processInstances
+    processInstances,
+    form
   }
 });

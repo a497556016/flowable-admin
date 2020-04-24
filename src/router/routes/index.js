@@ -5,6 +5,7 @@ import ProcessDefinition from "@/views/Process/Definition.vue";
 import ProcessInstances from "@/views/Process/Instances.vue";
 import TodoTask from "@/views/Task/Todo.vue";
 import DoneTask from "@/views/Task/Done.vue";
+import StartProcessWithForm from "@/views/Form/StartProcessWithForm";
 
 import Login from "@/views/Login";
 
@@ -58,6 +59,11 @@ const routes = [
           icon: "person",
           cnName: "已办任务"
         }
+      },
+      {
+        path: "form/startProcessWithForm",
+        name: "启动流程",
+        component: StartProcessWithForm
       }
     ]
   }

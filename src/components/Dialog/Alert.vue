@@ -1,8 +1,7 @@
 <template>
-    <v-dialog v-model="visible">
+    <v-dialog v-model="visible" max-width="250">
         <v-card>
-            <v-card-text>
-                {{message}}
+            <v-card-text v-html="message" style="padding: 15px;">
             </v-card-text>
             <v-card-actions>
                 <v-spacer></v-spacer>
